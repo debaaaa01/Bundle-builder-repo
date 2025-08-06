@@ -6,6 +6,7 @@ body {
 
 .container {
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
   padding: 20px;
   margin-left: 3rem;
@@ -135,7 +136,7 @@ body {
 
 
 
-/* Mobile */
+/* Mobile
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -148,5 +149,26 @@ body {
   .sidebar {
     border-left: none;
     border-top: 1px solid #ccc;
+  }
+} */
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center; /* ensures full width */
+  }
+
+  .product-card {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid #ccc;
+    padding: 1rem;
+    box-sizing: border-box;
   }
 }
