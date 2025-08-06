@@ -1,5 +1,3 @@
-
-
 const addButtons = document.querySelectorAll('.add-btn');
 const cartItemsDiv = document.getElementById('cart-items');
 const subtotalText = document.getElementById('subtotal');
@@ -72,8 +70,7 @@ function updateCart() {
   }
 
   subtotalText.textContent = `Total: $${(subtotal - discount).toFixed(2)}`;
-  //progressText.textContent = `${Object.keys(cart).length}/3 added`;
-  // Update progress bar
+ 
 const bundleCount = Object.keys(cart).length;
 const fill = document.getElementById('progress-fill');
 const progressLabel = document.getElementById('progress-label');
