@@ -17,11 +17,7 @@ addButtons.forEach(btn => {
     const price = parseFloat(card.dataset.price);
     const image = card.querySelector('img').src;
 
-    // Max 3 unique items allowed
-    if (!cart[id] && Object.keys(cart).length >= 3) {
-      alert("You can only add 3 unique items to the bundle.");
-      return;
-    }
+   
 
     // Add or increase quantity
     if (cart[id]) {
